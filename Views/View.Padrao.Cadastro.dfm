@@ -1,0 +1,159 @@
+object ViewPadraoCadastro: TViewPadraoCadastro
+  Left = 0
+  Top = 0
+  Caption = 'ViewPadraoCadastro'
+  ClientHeight = 502
+  ClientWidth = 608
+  Color = clBtnFace
+  Constraints.MinHeight = 540
+  Constraints.MinWidth = 620
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  KeyPreview = True
+  Visible = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  TextHeight = 15
+  object pnlBotoes: TPanel
+    Left = 495
+    Top = 0
+    Width = 113
+    Height = 502
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Align = alRight
+    Color = 8404992
+    ParentBackground = False
+    ShowCaption = False
+    TabOrder = 1
+    StyleElements = []
+    object btnGravar: TButton
+      AlignWithMargins = True
+      Left = 6
+      Top = 6
+      Width = 101
+      Height = 90
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 0
+      Align = alTop
+      Caption = 'Gravar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      OnClick = btnGravarClick
+    end
+    object btnFechar: TButton
+      AlignWithMargins = True
+      Left = 6
+      Top = 406
+      Width = 101
+      Height = 90
+      Margins.Left = 5
+      Margins.Top = 0
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Align = alBottom
+      Caption = 'Fechar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+      OnClick = btnFecharClick
+    end
+    object btnCancelar: TButton
+      AlignWithMargins = True
+      Left = 6
+      Top = 106
+      Width = 101
+      Height = 90
+      Margins.Left = 5
+      Margins.Top = 10
+      Margins.Right = 5
+      Margins.Bottom = 0
+      Align = alTop
+      Caption = 'Cancelar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 1
+      OnClick = btnCancelarClick
+    end
+    object btnPesquisar: TButton
+      AlignWithMargins = True
+      Left = 6
+      Top = 306
+      Width = 101
+      Height = 90
+      Margins.Left = 5
+      Margins.Top = 10
+      Margins.Right = 5
+      Margins.Bottom = 0
+      Align = alTop
+      Caption = 'Pesquisar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+      OnClick = btnPesquisarClick
+    end
+    object btnExcluir: TButton
+      AlignWithMargins = True
+      Left = 6
+      Top = 206
+      Width = 101
+      Height = 90
+      Margins.Left = 5
+      Margins.Top = 10
+      Margins.Right = 5
+      Margins.Bottom = 0
+      Align = alTop
+      Caption = 'Excluir'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 2
+      OnClick = btnExcluirClick
+    end
+  end
+  object pnlCentral: TPanel
+    Left = 0
+    Top = 0
+    Width = 495
+    Height = 502
+    Align = alClient
+    Color = clWhite
+    ParentBackground = False
+    ShowCaption = False
+    TabOrder = 0
+    StyleElements = []
+  end
+  object dscMain: TDataSource
+    OnStateChange = dscMainStateChange
+    Left = 448
+    Top = 8
+  end
+end

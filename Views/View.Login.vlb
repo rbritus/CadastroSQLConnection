@@ -1,0 +1,23 @@
+﻿[edtSenha]
+Coordinates=141,10,69,58
+
+[]
+Coordinates=80,90,72,80
+Visible=True
+LayerNames=
+ExplicitSubNodes=Brush.Color
+
+[Module Settings]
+ModelLayerNames=
+ActiveLayerNames=
+EditingLayerName=
+
+[pnlCentro]
+Coordinates=10,10,55,58
+
+[pnlBotoes]
+Coordinates=10,78,55,58
+
+[edtUsuario]
+Coordinates=220,10,75,58
+
